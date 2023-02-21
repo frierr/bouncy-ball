@@ -1,0 +1,47 @@
+html, body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(circle at 50% 31%, rgba(255,255,255,1) 0%, rgba(127,255,255,1) 25%, rgba(127,200,255,1) 50%, rgba(0,127,255,1) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    user-select: none;
+    color: black;
+    overflow: hidden;
+}
+
+#obstacle-1 {
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    height: 60px;
+    width: 450px;
+    transform: rotate(10deg);
+    background-color: black;
+}
+
+#obstacle-2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    height: 60px;
+    width: 500px;
+    transform: rotate(-20deg);
+    background-color: black;
+}
+
+#obstacle-3 {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    height: 60px;
+    width: 500px;
+    transform: rotate(60deg);
+    background-color: black;
+}
