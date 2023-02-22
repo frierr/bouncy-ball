@@ -1,4 +1,5 @@
 var grav = 3;
+var dmax = 10;
 var obstacles = [];
 
 window.onload = function() {
@@ -41,7 +42,8 @@ async function simulateBall(ball) {
                 //negative angle
                 distance = getDistanceToBlock([obs[0].getBoundingClientRect().left, obs[0].getBoundingClientRect().bottom, obs[0].getBoundingClientRect().right, obs[0].getBoundingClientRect().top], obs[2]/2, [left + 15, top + 15]);
             }
-            if (distance < 10) {
+            if (distance < dmax) {
+                top = top + distance - dmax; //correction to avoid object being stuck in obstacles
                 //spawnBallTemp(top + 15, left + 15);
                 //calculate vector
                 var v = Math.sqrt(hAcc * hAcc + wAcc * wAcc);
